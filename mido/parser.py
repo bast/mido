@@ -12,6 +12,11 @@ from .tokenizer import Tokenizer
 # TODO: add doc strings.
 
 
+
+
+
+
+
 class Parser(object):
     """
     MIDI byte stream parser
