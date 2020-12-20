@@ -25,10 +25,10 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
     - name: Install the package
-      run: pip install -q -e .
+      run: pip install -q -e .[dev]
     - name: Run tests
       run: |
-        py.test . -rs -q
+        pytest . -rs -q
 #       check-manifest -v
 #       sphinx-build docs _build -q -E
 #       flake8 mido
