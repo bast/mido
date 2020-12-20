@@ -29,6 +29,6 @@ jobs:
     - name: Run tests
       run: |
         pytest . -rs -q
-#       check-manifest -v
-#       sphinx-build docs _build -q -E
-#       flake8 mido
+        check-manifest -v
+        sphinx-build docs _build -q -E
+        flake8 mido
