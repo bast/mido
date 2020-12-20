@@ -28,7 +28,7 @@ jobs:
       run: pip install -q -e .
     - name: Run tests
       run: |
-        pytest . -rs -q
+        py.test . -rs -q
 #       check-manifest -v
 #       sphinx-build docs _build -q -E
 #       flake8 mido
